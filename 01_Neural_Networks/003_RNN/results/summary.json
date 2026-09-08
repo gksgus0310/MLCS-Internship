@@ -1,0 +1,81 @@
+{
+  "seq_len": 60,
+  "horizon": {
+    "1": {
+      "rmse": 0.015275,
+      "dir_acc": 51.35
+    },
+    "2": {
+      "rmse": 0.015297,
+      "dir_acc": 51.35
+    },
+    "3": {
+      "rmse": 0.01528,
+      "dir_acc": 51.89
+    },
+    "4": {
+      "rmse": 0.01525,
+      "dir_acc": 52.78
+    },
+    "5": {
+      "rmse": 0.015222,
+      "dir_acc": 51.71
+    }
+  },
+  "features": [
+    "r_close",
+    "r_open",
+    "hl_range",
+    "co",
+    "r_volume",
+    "vol_20"
+  ],
+  "device": "cuda",
+  "baseline": {
+    "rmse": 0.01521,
+    "dir_acc_coin": 50.0,
+    "dir_acc_always_up": 54.88,
+    "n_test": 563
+  },
+  "models": {
+    "m2o": {
+      "name": "many-to-one (60일 -> 1일)",
+      "rmse": 0.015177,
+      "dir_acc": 55.08,
+      "params": 51777,
+      "best_epoch": 1,
+      "epochs_run": 21,
+      "n_eval": 563,
+      "p_vs_coin": 0.0159,
+      "p_vs_always_up": 0.9257,
+      "beats_always_up": false,
+      "train_s": 3.2
+    },
+    "m2m": {
+      "name": "many-to-many (60일 -> 5일)",
+      "rmse": 0.015275,
+      "dir_acc": 51.35,
+      "params": 52037,
+      "best_epoch": 8,
+      "epochs_run": 28,
+      "n_eval": 559,
+      "p_vs_coin": 0.5243,
+      "p_vs_always_up": 0.0928,
+      "beats_always_up": false,
+      "train_s": 2.5
+    },
+    "m2m_aligned": {
+      "name": "many-to-many aligned (60일 -> 60일)",
+      "rmse": 0.015663,
+      "dir_acc": 53.68,
+      "params": 51777,
+      "best_epoch": 1,
+      "epochs_run": 21,
+      "n_eval": 504,
+      "p_vs_coin": 0.0987,
+      "p_vs_always_up": 0.5862,
+      "beats_always_up": false,
+      "train_s": 1.9
+    }
+  }
+}
