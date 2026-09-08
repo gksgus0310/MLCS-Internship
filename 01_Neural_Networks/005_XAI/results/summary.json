@@ -1,0 +1,17 @@
+{
+  "dataset": "Oxford-IIIT Pet (binary: cat vs dog)",
+  "smoke": false,
+  "device": "cuda",
+  "test": {
+    "n": 3669,
+    "accuracy": 98.99,
+    "auc": 0.9995,
+    "val_acc": 99.28
+  },
+  "cam": {
+    "n": 300,
+    "energy_in_object": 0.7587,
+    "object_area_frac": 0.5868,
+    "ratio": 1.29
+  }
+}
