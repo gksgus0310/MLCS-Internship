@@ -1,0 +1,53 @@
+{
+  "cache": {
+    "file": "cifar10_resnet18_fp16.npz",
+    "mb": 52.7,
+    "feature_dim": 512
+  },
+  "pretrained_vs_random": {
+    "(a) ImageNet 사전학습": {
+      "test_acc": 88.24,
+      "val_acc": 89.84,
+      "train_s": 8.4
+    },
+    "(b) 랜덤 초기화": {
+      "test_acc": 42.36,
+      "val_acc": 41.94,
+      "train_s": 7.5
+    }
+  },
+  "data_size_sweep": {
+    "100": {
+      "pretrained": 69.25,
+      "random": 13.94
+    },
+    "500": {
+      "pretrained": 79.51,
+      "random": 21.31
+    },
+    "2000": {
+      "pretrained": 84.03,
+      "random": 28.41
+    },
+    "10000": {
+      "pretrained": 86.04,
+      "random": 36.24
+    },
+    "45000": {
+      "pretrained": 88.9,
+      "random": 43.18
+    }
+  },
+  "per_class_acc": {
+    "airplane": 88.5,
+    "automobile": 93.7,
+    "bird": 81.0,
+    "cat": 80.2,
+    "deer": 86.7,
+    "dog": 84.0,
+    "frog": 93.7,
+    "horse": 87.6,
+    "ship": 95.3,
+    "truck": 91.7
+  }
+}
