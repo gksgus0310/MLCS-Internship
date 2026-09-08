@@ -1,0 +1,83 @@
+{
+  "part1": {
+    "vx": 20.0,
+    "R": 50.0,
+    "lat_g": 0.815,
+    "Ts": 0.01,
+    "x0": [
+      8.0,
+      0.0,
+      0.3,
+      0.0
+    ],
+    "delta_max_deg": 17.2
+  },
+  "part2": {
+    "LQR (한계를 모름)": {
+      "max_ey": 693.19,
+      "final_ey": 406.779,
+      "sat_pct": 99.6,
+      "diverged": true
+    },
+    "MPC (N=30)": {
+      "max_ey": 8.01,
+      "final_ey": -0.143,
+      "sat_pct": 16.8,
+      "diverged": false
+    }
+  },
+  "part3_horizon": {
+    "N=5": {
+      "horizon_s": 0.05,
+      "max_ey_terminal": 584.67,
+      "max_ey_no_terminal": 9.29,
+      "qp_ms": 0.067
+    },
+    "N=10": {
+      "horizon_s": 0.1,
+      "max_ey_terminal": 624.41,
+      "max_ey_no_terminal": 8.6,
+      "qp_ms": 0.072
+    },
+    "N=20": {
+      "horizon_s": 0.2,
+      "max_ey_terminal": 130.81,
+      "max_ey_no_terminal": 8.18,
+      "qp_ms": 0.121
+    },
+    "N=30": {
+      "horizon_s": 0.3,
+      "max_ey_terminal": 8.01,
+      "max_ey_no_terminal": 8.06,
+      "qp_ms": 0.265
+    },
+    "N=50": {
+      "horizon_s": 0.5,
+      "max_ey_terminal": 8.01,
+      "max_ey_no_terminal": 8.01,
+      "qp_ms": 0.938
+    }
+  },
+  "part4_vehicles": {
+    "예제 세단 (3톤)": {
+      "mass": 2979.51,
+      "wheelbase": 5.24,
+      "understeer_grad": 0.01104,
+      "vx": 20.0,
+      "R": 50.0,
+      "lat_g": 0.82,
+      "settle_s": 1.58,
+      "max_delta_deg": 17.2
+    },
+    "FSAE (300kg)": {
+      "mass": 300.0,
+      "wheelbase": 1.53,
+      "understeer_grad": 0.00119,
+      "vx": 15.0,
+      "R": 20.0,
+      "lat_g": 1.15,
+      "settle_s": 0.94,
+      "max_delta_deg": 24.1
+    }
+  }
+}
