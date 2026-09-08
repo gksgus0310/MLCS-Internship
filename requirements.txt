@@ -1,0 +1,23 @@
+# MLCS 인턴십 과제 공통 패키지
+#
+# !! torch / torchvision 은 여기에 없다. 일부러 뺐다. !!
+# 노트북마다 GPU 유무가 달라서 설치 명령이 다르기 때문이다.
+# README.md 의 "3단계: PyTorch 설치" 를 볼 것.
+
+numpy>=1.26
+matplotlib>=3.8
+pandas>=2.1
+scipy>=1.11
+tqdm>=4.66
+
+# 02 Optimal Control (MPC)
+qpsolvers>=4.3
+quadprog>=0.1.12
+
+# 03 Reinforcement Learning
+gymnasium[toy-text]>=0.29
+stable-baselines3>=2.3
+
+# 003 RNN (주가 데이터)
+yfinance>=0.2.40
+scikit-learn>=1.4

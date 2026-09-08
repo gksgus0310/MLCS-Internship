@@ -1,0 +1,46 @@
+device: cpu
+train 50000 / val 10000 / test 10000
+
+=== A (shallow/narrow) | 101,770 parameters ===
+Epoch [01/15] train loss 0.4851 acc 86.32% | val loss 0.3160 acc 90.94%
+Epoch [02/15] train loss 0.2720 acc 91.98% | val loss 0.2460 acc 92.76%
+Epoch [03/15] train loss 0.2064 acc 93.94% | val loss 0.2366 acc 92.77%
+Epoch [04/15] train loss 0.1653 acc 95.12% | val loss 0.1824 acc 94.61%
+Epoch [05/15] train loss 0.1383 acc 95.88% | val loss 0.1765 acc 94.59%
+Epoch [06/15] train loss 0.1185 acc 96.48% | val loss 0.1555 acc 94.99%
+Epoch [07/15] train loss 0.1052 acc 96.85% | val loss 0.1264 acc 96.23%
+Epoch [08/15] train loss 0.0939 acc 97.16% | val loss 0.1846 acc 94.32%
+Epoch [09/15] train loss 0.0838 acc 97.47% | val loss 0.1608 acc 95.23%
+Epoch [10/15] train loss 0.0780 acc 97.60% | val loss 0.1310 acc 96.17%
+Epoch [11/15] train loss 0.0722 acc 97.77% | val loss 0.1145 acc 96.79%
+Epoch [12/15] train loss 0.0675 acc 97.93% | val loss 0.1099 acc 96.87%
+Epoch [13/15] train loss 0.0624 acc 98.07% | val loss 0.1137 acc 96.72%
+Epoch [14/15] train loss 0.0587 acc 98.14% | val loss 0.1192 acc 96.75%
+Epoch [15/15] train loss 0.0541 acc 98.31% | val loss 0.1134 acc 96.83%
+--> best epoch 12 | val 96.87% | TEST 96.94%
+
+=== B (deep/wide) | 798,474 parameters ===
+Epoch [01/15] train loss 0.5910 acc 82.51% | val loss 0.2179 acc 93.44%
+Epoch [02/15] train loss 0.2486 acc 92.54% | val loss 0.1666 acc 94.95%
+Epoch [03/15] train loss 0.1926 acc 94.17% | val loss 0.1490 acc 95.54%
+Epoch [04/15] train loss 0.1679 acc 94.88% | val loss 0.1625 acc 94.98%
+Epoch [05/15] train loss 0.1493 acc 95.54% | val loss 0.1194 acc 96.57%
+Epoch [06/15] train loss 0.1337 acc 95.81% | val loss 0.1370 acc 96.06%
+Epoch [07/15] train loss 0.1251 acc 96.18% | val loss 0.1554 acc 95.41%
+Epoch [08/15] train loss 0.1164 acc 96.38% | val loss 0.1118 acc 96.63%
+Epoch [09/15] train loss 0.1148 acc 96.46% | val loss 0.1036 acc 96.84%
+Epoch [10/15] train loss 0.1021 acc 96.86% | val loss 0.1208 acc 96.45%
+Epoch [11/15] train loss 0.1008 acc 96.90% | val loss 0.1095 acc 96.78%
+Epoch [12/15] train loss 0.0913 acc 97.15% | val loss 0.1060 acc 96.85%
+Epoch [13/15] train loss 0.0912 acc 97.18% | val loss 0.0929 acc 97.43%
+Epoch [14/15] train loss 0.0891 acc 97.16% | val loss 0.1083 acc 96.96%
+Epoch [15/15] train loss 0.0880 acc 97.29% | val loss 0.0911 acc 97.41%
+--> best epoch 13 | val 97.43% | TEST 97.46%
+
+==============================================================================
+model                   params  best ep   val acc  test acc   train s
+------------------------------------------------------------------------------
+A (shallow/narrow)     101,770       12    96.87%    96.94%     219.3
+B (deep/wide)          798,474       13    97.43%    97.46%     279.5
+==============================================================================
+results saved to /home/claude/mlcs-internship/01 Neural Networks/001 MLP/results

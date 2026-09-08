@@ -1,0 +1,170 @@
+{
+  "part1_pole_placement": {
+    "slow  (-2, -1.5)": {
+      "eigs": [
+        -2.0,
+        -1.5
+      ],
+      "K": [
+        [
+          0.0,
+          2.0,
+          1.5,
+          1.0
+        ],
+        [
+          2.0,
+          4.0,
+          1.0,
+          5.0
+        ]
+      ],
+      "settling_time_s": 5.0,
+      "max_abs_u": 5.0,
+      "max_abs_K": 5.0
+    },
+    "given (-10, -8)": {
+      "eigs": [
+        -10.0,
+        -8.0
+      ],
+      "K": [
+        [
+          77.0,
+          2.0,
+          16.0,
+          1.0
+        ],
+        [
+          2.0,
+          158.0,
+          1.0,
+          34.0
+        ]
+      ],
+      "settling_time_s": 0.71,
+      "max_abs_u": 159.0,
+      "max_abs_K": 158.0
+    },
+    "fast  (-25, -20)": {
+      "eigs": [
+        -25.0,
+        -20.0
+      ],
+      "K": [
+        [
+          497.0,
+          2.0,
+          43.0,
+          1.0
+        ],
+        [
+          2.0,
+          998.0,
+          1.0,
+          88.0
+        ]
+      ],
+      "settling_time_s": 0.27,
+      "max_abs_u": 999.0,
+      "max_abs_K": 998.0
+    }
+  },
+  "controllability_rank": 4,
+  "part2_discretization": {
+    "emulation": {
+      "Ts=0.05": {
+        "spectral_radius": 0.721,
+        "stable": true,
+        "final_error": 0.0062
+      },
+      "Ts=0.1": {
+        "spectral_radius": 0.673,
+        "stable": true,
+        "final_error": 0.0062
+      },
+      "Ts=0.15": {
+        "spectral_radius": 1.844,
+        "stable": false,
+        "final_error": 48201066.3998
+      },
+      "Ts=0.2": {
+        "spectral_radius": 3.198,
+        "stable": false,
+        "final_error": 209251321192.3031
+      }
+    },
+    "redesign": {
+      "Ts=0.05": {
+        "spectral_radius": 0.644,
+        "stable": true,
+        "final_error": 0.0091
+      },
+      "Ts=0.1": {
+        "spectral_radius": 0.45,
+        "stable": true,
+        "final_error": 0.0131
+      },
+      "Ts=0.15": {
+        "spectral_radius": 0.374,
+        "stable": true,
+        "final_error": 0.0188
+      },
+      "Ts=0.2": {
+        "spectral_radius": 0.357,
+        "stable": true,
+        "final_error": 0.0267
+      }
+    }
+  },
+  "part3_mobile_robot": {
+    "pose1": {
+      "e0": [
+        3.0,
+        -1.571,
+        0.785
+      ],
+      "final_r": 0.0003
+    },
+    "pose2": {
+      "e0": [
+        3.0,
+        1.571,
+        -0.785
+      ],
+      "final_r": 0.0003
+    },
+    "pose3": {
+      "e0": [
+        2.0,
+        -1.047,
+        1.571
+      ],
+      "final_r": 0.0003
+    },
+    "pose4": {
+      "e0": [
+        4.0,
+        0.785,
+        1.047
+      ],
+      "final_r": 0.0003
+    },
+    "pose5": {
+      "e0": [
+        1.5,
+        -0.785,
+        -1.047
+      ],
+      "final_r": 0.0001
+    },
+    "pose6": {
+      "e0": [
+        3.5,
+        1.047,
+        -0.524
+      ],
+      "final_r": 0.0002
+    }
+  }
+}

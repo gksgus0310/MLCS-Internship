@@ -1,0 +1,39 @@
+{
+  "machine": {
+    "host": "Hyun",
+    "os": "Windows 11",
+    "torch": "2.11.0+cu128",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "results": {
+    "A (shallow/narrow)": {
+      "params": 101770,
+      "best_epoch": 12,
+      "best_val_acc": 96.99,
+      "test_acc": 97.25,
+      "test_loss": 0.09408868009224534,
+      "final_train_acc": 98.286,
+      "train_time_s": 116.9,
+      "hidden": [
+        128
+      ],
+      "dropout": 0.0
+    },
+    "B (deep/wide)": {
+      "params": 798474,
+      "best_epoch": 9,
+      "best_val_acc": 97.32,
+      "test_acc": 97.51,
+      "test_loss": 0.08198510512784124,
+      "final_train_acc": 97.556,
+      "train_time_s": 116.1,
+      "hidden": [
+        512,
+        512,
+        256
+      ],
+      "dropout": 0.2
+    }
+  }
+}
