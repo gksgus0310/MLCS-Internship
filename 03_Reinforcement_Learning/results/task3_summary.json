@@ -1,0 +1,71 @@
+{
+  "env": "CartPole-v1",
+  "timesteps": 60000,
+  "seed": 42,
+  "results": {
+    "DQN": {
+      "algo": "DQN",
+      "seconds": 75.4,
+      "episodes": 766,
+      "final_eval_mean": 500.0,
+      "final_eval_std": 0.0,
+      "best_eval_mean": 500.0,
+      "best_eval_std": 0.0,
+      "phases": [
+        {
+          "lo": 0,
+          "hi": 10000,
+          "n": 293,
+          "mean_r": 34.0,
+          "eps": 0.601
+        },
+        {
+          "lo": 10000,
+          "hi": 20000,
+          "n": 109,
+          "mean_r": 91.7,
+          "eps": 0.04
+        },
+        {
+          "lo": 20000,
+          "hi": 30000,
+          "n": 165,
+          "mean_r": 60.8,
+          "eps": 0.04
+        },
+        {
+          "lo": 30000,
+          "hi": 40000,
+          "n": 79,
+          "mean_r": 122.2,
+          "eps": 0.04
+        },
+        {
+          "lo": 40000,
+          "hi": 50000,
+          "n": 66,
+          "mean_r": 153.1,
+          "eps": 0.04
+        },
+        {
+          "lo": 50000,
+          "hi": 60000,
+          "n": 54,
+          "mean_r": 188.2,
+          "eps": 0.04
+        }
+      ],
+      "best_episode": 500.0,
+      "last50_mean": 184.6
+    },
+    "PPO": {
+      "algo": "PPO",
+      "seconds": 117.4,
+      "episodes": 446,
+      "final_eval_mean": 496.97,
+      "final_eval_std": 10.26,
+      "best_eval_mean": 493.27,
+      "best_eval_std": 18.27
+    }
+  }
+}

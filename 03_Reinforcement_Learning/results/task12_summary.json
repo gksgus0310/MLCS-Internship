@@ -1,0 +1,56 @@
+{
+  "env": "FrozenLake-v1",
+  "env_kwargs": {
+    "map_name": "4x4",
+    "is_slippery": true
+  },
+  "gamma": 0.99,
+  "theta": 1e-10,
+  "policy_iteration": {
+    "outer_iters": 3,
+    "sweeps": 848,
+    "backups": 54272.0,
+    "seconds": 0.0192
+  },
+  "value_iteration": {
+    "sweeps": 420,
+    "backups": 26880.0,
+    "seconds": 0.0195
+  },
+  "vi_contraction_measured": 0.9532,
+  "V_start": 0.5420259308172166,
+  "same_policy": true,
+  "success_rate": 0.7325,
+  "theta_sweep": [
+    {
+      "theta": 0.1,
+      "backups": 832.0,
+      "iters": 4,
+      "optimal": false
+    },
+    {
+      "theta": 0.01,
+      "backups": 3712.0,
+      "iters": 3,
+      "optimal": false
+    },
+    {
+      "theta": 0.0001,
+      "backups": 17024.0,
+      "iters": 3,
+      "optimal": true
+    },
+    {
+      "theta": 1e-06,
+      "backups": 29504.0,
+      "iters": 3,
+      "optimal": true
+    },
+    {
+      "theta": 1e-10,
+      "backups": 54272.0,
+      "iters": 3,
+      "optimal": true
+    }
+  ]
+}
